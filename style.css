@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+
+body .attribution {
+  font-size: 13px;
+  text-align: center;
+}
+
+body .attribution a {
+  color: #3e52a3;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  max-width: 1440px;
+  height: 90%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.container .box {
+  height: 100%;
+  padding: 3rem 8rem 4rem 3rem;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: #f2f2f2;
+}
+
+.container .box h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.container .box p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.container .box:first-child {
+  background: #e38826;
+}
+
+.container .box:first-child a {
+  color: #e38826;
+}
+
+.container .box:nth-last-of-type(2) {
+  background: #006970;
+}
+
+.container .box:nth-last-of-type(2) a {
+  color: #006970;
+}
+
+.container .box:last-child {
+  background: #004241;
+}
+
+.container .box:last-child a {
+  color: #004241;
+}
+
+.container .box .button {
+  position: relative;
+  top: 5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  background: #f2f2f2;
+  padding: 1rem 2rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 3rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: background 300ms ease-out, color 300ms linear;
+  transition: background 300ms ease-out, color 300ms linear;
+}
+
+.container .box .button:hover, .container .box .button:active {
+  background: transparent;
+  color: #f2f2f2;
+}
+
+@media (max-width: 1065px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 375px;
+    min-height: 1300px;
+  }
+  .container .box {
+    min-height: 400px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

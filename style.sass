@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap')
+//font-family: 'Lexend Deca', sans-serif
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap')
+//font-family: 'Big Shoulders Display', cursive
+    
+$bright-orange: hsl(31, 77%, 52%)
+$dark-cyan: hsl(184, 100%, 22%)
+$very-dark-cyan: hsl(179, 100%, 13%)
+
+$transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75)
+$very-light-gray-background-headings-buttons: hsl(0, 0%, 95%)
+
+*, *::before, *::after
+    box-sizing: border-box
+
+body
+    display: grid
+    place-items: center
+    margin: 0
+    padding: 0
+    font-size: 15px
+    min-height: 100vh
+    background: $very-light-gray-background-headings-buttons
+
+    .attribution 
+        font-size: 13px
+        text-align: center
+
+        a 
+            color: hsl(228, 45%, 44%)
+
+.container
+    display: flex
+    width: 95%
+    max-width: 1440px
+    height: 90%
+    border-radius: 1rem
+    overflow: hidden
+
+    .box
+        height: 100%
+        padding: 3rem 8rem 4rem 3rem
+        font-family: 'Lexend Deca', sans-serif
+        font-weight: 400
+        color: $very-light-gray-background-headings-buttons
+
+        h1
+            font-family: 'Big Shoulders Display', cursive
+            font-weight: 700
+            font-size: 2rem
+            text-transform: uppercase
+        p
+            color: $transparent-white-paragraphs
+        &:first-child
+            background: $bright-orange
+
+            a
+                color: $bright-orange
+
+        &:nth-last-of-type(2)
+            background: $dark-cyan
+
+            a
+                color: $dark-cyan
+
+        &:last-child
+            background: $very-dark-cyan
+
+            a
+                color: $very-dark-cyan
+        
+        .button
+            position: relative
+            top: 5rem
+            text-decoration: none
+            font-size: 1rem
+            background: $very-light-gray-background-headings-buttons
+            padding: 1rem 2rem
+            border: 2px solid $very-light-gray-background-headings-buttons
+            border-radius: 3rem
+            transform: translate(-50%, -50%)
+            transition: background 300ms ease-out, color 300ms linear
+
+            &:hover, &:active
+                background: transparent 
+                color: $very-light-gray-background-headings-buttons
+
+@media (max-width: 1065px)
+    .container
+        flex-direction: column
+        max-width: 375px
+        min-height: 1300px
+        .box
+            min-height: 400px
+            .button
+                
+            
+
+
+            
+            
